@@ -37,10 +37,12 @@ let App = {
         $('.testimonials').slick({
             rows: 0,
             autoplay: false,
-            arrows: false,
+            arrows: true,
             centerMode: true,
             infinite: true,
             slidesToShow: 3,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
         });
     },
 

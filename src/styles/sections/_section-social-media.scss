@@ -45,7 +45,7 @@ section.section--social-media {
       }
 
       li {
-        
+
         &:last-of-type {
 
           a {
@@ -70,5 +70,15 @@ section.section--social-media {
     div {
       overflow : hidden;
     }
+
+    p {
+      font-size : 1.1rem;
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    float          : none;
+    display        : inline-block;
+    vertical-align : middle;
   }
 }

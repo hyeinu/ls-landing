@@ -48,4 +48,56 @@ section.section--testimonials {
       background : linear-gradient(-90deg, $grey-98, transparentize($grey-98, 1));
     }
   }
+
+  .slick-arrow {
+    border           : 0;
+    height           : 3rem;
+    width            : 3rem;
+    position         : absolute;
+    top              : 50%;
+    transform        : translateY(-50%);
+    background-color : transparent;
+    outline          : 0;
+    z-index          : 100;
+
+    &:hover,
+    &:focus {
+
+      &:before {
+        color : $ls-light-blue;
+      }
+    }
+
+    &:before {
+      font-family     : 'Fontawesome';
+      position        : absolute;
+      top             : 0;
+      left            : 0;
+      height          : 3rem;
+      width           : 3rem;
+      display         : flex;
+      align-items     : center;
+      justify-content : center;
+      font-size       : 2rem;
+      color           : $ls-dark-blue;
+      cursor          : pointer;
+
+    }
+  }
+
+  .slick-prev {
+    left : 32%;
+
+    &:before {
+      content : "\f104";
+    }
+  }
+
+  .slick-next {
+    right : 32%;
+
+    &:before {
+      content : "\f105";
+    }
+  }
 }
