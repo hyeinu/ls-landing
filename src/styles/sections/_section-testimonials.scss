@@ -14,6 +14,14 @@ section.section--testimonials {
     margin-bottom : 0;
   }
 
+  .slick-list {
+
+    @media screen and (max-width : 991.98px) {
+      padding-left  : 0 !important;
+      padding-right : 0 !important;
+    }
+  }
+
   .testimonial {
     padding-left  : 2rem;
     padding-right : 2rem;
@@ -26,6 +34,11 @@ section.section--testimonials {
     margin-left   : -25vw;
     position      : relative;
 
+    @media screen and (max-width : 991.98px) {
+      width       : 100vw;
+      margin-left : 0;
+    }
+
     &:before,
     &:after {
       display        : block;
@@ -36,6 +49,10 @@ section.section--testimonials {
       width          : 25vw;
       z-index        : 1000;
       pointer-events : none;
+
+      @media screen and (max-width : 991.98px) {
+        display : none;
+      }
     }
 
     &:before {
@@ -88,6 +105,10 @@ section.section--testimonials {
   .slick-prev {
     left : 32%;
 
+    @media screen and (max-width : 991.98px) {
+      left : 2%;
+    }
+
     &:before {
       content : "\f104";
     }
@@ -95,6 +116,10 @@ section.section--testimonials {
 
   .slick-next {
     right : 32%;
+
+    @media screen and (max-width : 991.98px) {
+      right : 2%;
+    }
 
     &:before {
       content : "\f105";

@@ -10,6 +10,38 @@
   svg {
     width : 300px;
   }
+
+  .navbar-toggler {
+    background-color : $ls-dark-blue;
+    border           : 1px solid $ls-light-blue;
+    margin-top       : 1rem;
+    margin-bottom    : 1rem;
+  }
+
+  .navbar-toggler-icon {
+    background-image : $navbar-dark-toggler-icon-bg;
+  }
+
+  @media screen and (max-width : 991.98px) {
+
+    .nav-item {
+      background-color : $ls-dark-blue;
+      border-bottom    : 1px solid $ls-light-blue;
+      border-left      : 1px solid $ls-light-blue;
+      border-right     : 1px solid $ls-light-blue;
+
+      &:first-of-type {
+        border-top              : 1px solid $ls-light-blue;
+        border-top-left-radius  : 5px;
+        border-top-right-radius : 5px;
+      }
+
+      &:last-of-type {
+        border-bottom-left-radius  : 5px;
+        border-bottom-right-radius : 5px;
+      }
+    }
+  }
 }
 
 #primary-nav {
@@ -31,6 +63,10 @@
     padding-right : 2rem;
     color         : $white;
   }
+}
+
+.nav-link {
+  font-size : 1.1rem;
 }
 
 h2 {
