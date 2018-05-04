@@ -140,6 +140,11 @@ li {
     }
   }
 
+  .navbar {
+    padding-top    : 0;
+    padding-bottom : 0;
+  }
+
   .navbar-nav {
     display         : flex;
     align-items     : center;
@@ -150,8 +155,12 @@ li {
       flex-direction : column;
     }
 
+    .nav-link {
+      font-size : 1rem;
+    }
+
     a {
-      padding : 1rem;
+      padding : 0.75rem 1rem;
 
       @media screen and (max-width : 768px) {
         padding : 0.5rem;
@@ -175,7 +184,7 @@ li {
 
   svg {
     width         : 300px;
-    margin-bottom : 1rem;
+    margin-bottom : 0.75rem;
 
     circle,
     polygon,
@@ -185,6 +194,7 @@ li {
   }
 
   p {
-    color : $white;
+    color     : $white;
+    font-size : 1rem;
   }
 }
